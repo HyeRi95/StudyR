@@ -67,4 +67,6 @@ water <- 100 # ml
 result <- (salt/(salt+water))*100
 cat('소금 =',salt,'mg, 물 =', water, 'ml : 농도 =', result, '%')
 
-# 
+`df # >  console 창에 + 나오면 esc로 종료하고 진행한다 
+
+
