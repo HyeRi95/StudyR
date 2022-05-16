@@ -113,3 +113,5 @@ result
 
 #내장함수 apply()
 apply(iris[,1:4],2, median) # species가 존재하므로 전체행에 대한 mean 에러 
+
+
