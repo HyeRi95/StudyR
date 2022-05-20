@@ -181,6 +181,7 @@ ggplot(data = df.7, aes(x=Day, y = Ozone))+
   labs(x = '일' , y = '오존지수')
 
 # 실전분석 
+library(carData)
 str(UN98)
 help(UN98)
 df <- UN98[,c('region','tfr')]
