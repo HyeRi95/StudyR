@@ -55,6 +55,7 @@ hist(dist, main='제동거리', xlab = '제동거리', ylab = '빈도수',
      border = 'blue', col = 'skyblue', las = 1, breaks = 6) # breaks = 12 범위 쪼개서 그리기
 
 # LAB 다이아몬드 시세 
+install.packages("Stat2Data")
 library(Stat2Data)
 data(Diamonds)
 ds <- Diamonds$PricePerCt
