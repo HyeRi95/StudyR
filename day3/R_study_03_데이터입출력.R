@@ -13,7 +13,7 @@ cat('가장 젊은 사람의 나이는',young,'세이고,\n가장 늙은 사람�
 
 # 화면에서 데이터 입력받기
 #install.packages('svDialogs')
-#library(svDialogs)
+library(svDialogs)
 user.input <- dlgInput('수입을 입력하세요')$res # res 필수! 입력된 값은 모두 문자취급 
 user.input
 income <- as.numeric(user.input) # 형변환
@@ -21,8 +21,8 @@ income # 1e+07 = 10000000
 tax <- income * 0.05
 tax
 cat('세금',tax,'원')
-options(scipen = 1) # 1e+4 부터 출력을 10000로 변경하는 옵션 
-
+options(scipen = 999) # 1e+4 부터 출력을 10000로 변경하는 옵션 
+options(scipen = 0) # 1e+4 형태로 원래대로 돌리는 옵션 
 x <- 1
 print(x)
 cat(x)

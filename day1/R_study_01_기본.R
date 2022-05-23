@@ -3,7 +3,7 @@
 temp <- iris  # temp에 iris 할당 
 temp
 x <- 10
-
+x
 # 명령문 실행방법
 3+(4*5)
 

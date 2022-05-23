@@ -1,5 +1,5 @@
 # 함수 
-y <- sqrt(x = 100, y =1)
+y <- sqrt(x = 100)
 y # 함수 () 안에 들어가는 것 부르는 호칭 : 파라미터 매개변수 인자 인수 argument
 
 y <- c(1, 7, 4, 2, 3, NA) # NA는 sort 안된다 
@@ -44,6 +44,6 @@ sum(sales[1:6])
 # 하반기 매출액 합계
 sum(sales[7:12])
 
-# 1년 매출액 합계계
+# 1년 매출액 합계
 sum(max.sales.month)
-
+sum(sales)

@@ -67,7 +67,7 @@ condi <- d > 5 & d < 8
 condi
 d[condi]
 sum(d>5) # 5보다 큰값이 개수를 출력 6,7,8,9 : 4개 
-
+sum(d[d<6])
 
 # R 카페의 매출액 분석하기
 espresso <- c(4, 5, 3, 6, 5, 4, 7)

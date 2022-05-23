@@ -23,8 +23,8 @@ m2
 m3 <- rbind(m2,x)
 m3
 
-m3.1 <- cbind(m2,x)
-
+m3.1 <- cbind(m2,x) # 개수가 안맞아서 cbind 불가 
+m3.1
 m4 <- cbind(z,x)
 m4
 

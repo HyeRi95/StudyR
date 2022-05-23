@@ -56,7 +56,7 @@ burger["Mcdonald",'na']
 burger['Mcdonald',]
 burger[,'kcal']
 
-# 데이터 프레임 : 숫자형 자료와 문자형 자료가 결합되이있는 형태 
+# 데이터 프레임 : 숫자형 자료와 문자형 자료가 결합되어있는 형태 
 physicals <- matrix(c(168.4, 169.5, 62.4, 65.5,'M','F'), nrow = 2) 
 physicals # 벡터와 마찬가지로 matrix는  문자 들어가면 전부 문자로 취급 
 

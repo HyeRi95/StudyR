@@ -65,7 +65,7 @@ sale.mean.new <- mean(sale.day)
 sale.mean.new
 names(sale.day) <- c('Mon','Tue','Wed','Thu','Fri','Sat','Sun')
 sale.day
-sale.day[sale.day >= sale.mean.new] # 요일과 총액 출력 
+sale.day[sale.day >= sale.mean.new] # 요일과 총액 출력 평균보다 매출액 높은날 
 names(sale.day[sale.day >= sale.mean.new]) # 요일만 출력 
 
 # 월별 감전사고 통계

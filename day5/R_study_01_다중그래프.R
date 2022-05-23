@@ -1,5 +1,5 @@
 # 다중그래프 
-par(mfrow = c(2,2), mar =c(3,3,4,2,0)) #파티션 화면분할 2x2 
+par(mfrow = c(2,2), mar =c(3,3,4,2)) #파티션 화면분할 2x2 
 hist(iris$Sepal.Length,
      main = '붓꽃 꽃받침 길이', col = 'orange') # 히스토그램
 
