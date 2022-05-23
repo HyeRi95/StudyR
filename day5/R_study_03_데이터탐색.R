@@ -10,6 +10,7 @@ room.class <- TitanicSurvival$passengerClass
 str(room.class)
 room.class
 tbl <- table(room.class)
+tbl
 sum(tbl)
 
 barplot(tbl, main = '선실별 탑승객수', xlab = '선실등급',ylab ='탑승객수', 
