@@ -101,8 +101,29 @@ test.5.2.new <- count(test.5.2,survived)
 test.5.3.new <- count(test.5.3,survived)
 test.info <- cbind(test.5.1.new[,2],test.5.2.new[,2],test.5.3.new[,2])
 test.info <- as.matrix(test.info)
+test.info
+
 barplot(test.info,col = rainbow(2),main = '타이타닉 클래스별 생존자',
         names =c('First','Second','Third'),
-        legend.text = c('생존자','사망자'),
+        legend.text = c('사망자','생존자'),
         args.legend = list(x='topleft',inset=c(0.1,0)))
 
+
+library(carData)
+TitanicSurvival
+str(TitanicSurvival)
+data.na <- TitanicSurvival[complete.cases(TitanicSurvival),] # 결측값 있는 행 제거 
+str(data.na)
+#survived <-TitanicSurvival$survived
+#passengerClass <- TitanicSurvival$passengerClass
+#tbl <- table(survived,passengerClass)
+tbl <- table(data.na$survived,data.na$passengerClass)
+tbl
+tbl <- as.matrix(tbl)
+barplot(tbl, 
+        main = '선실별 사망자, 생존자 수',
+        col = rainbow(2),
+        names=c('First','Second','Third'),
+        legend.text = c('사망자','생존자'),
+        args.legend = list(x='topleft',inset=c(0.1,0))
+)
